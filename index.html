@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--custom css-->
+    <link rel="stylesheet" href="./css/style.css">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!--google icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+
+
+
+    <title>DASHBOARD#5</title>
+</head>
+<body>
+    
+    <div class="grid-container">
+
+        <!--header start-->
+        <header class="header">
+            <div class="logo">
+                BRAND.
+            </div>
+
+            <div class="header-left">
+                <ul class="list">
+
+                    <li class="list-item">
+                        <a href="#">
+                            <span class="material-icons-outlined">dashboard</span>Dashboard
+                        </a>
+                    </li>
+
+                    <li class="list-item">
+                        <a href="#">
+                            <span class="material-icons-outlined">inventory_2</span>PRODUCTS
+                        </a>
+                    </li>
+
+                    <li class="list-item">
+                        <a href="#">
+                            <span class="material-icons-outlined">poll</span>REPORTS
+                        </a>
+                    </li>
+
+                    <li class="list-item">
+                        <a href="#">
+                            <span class="material-icons-outlined">settings</span>SETTINGS
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+
+            <div class="header-right">
+                <span class="material-icons-outlined">notifications</span>
+                <span class="material-icons-outlined">email</span>
+                <span class="material-icons-outlined">account_circle</span>
+            </div>
+
+        </header>
+        <!--header end-->
+
+
+
+        <!--main start-->
+        <main class="main-container">
+            <div class="main-cards">
+
+                <div class="card">
+                    <div class="card-inner">
+                        <p>PRODUCTS</p>
+                        <div class="icon icon-shape background-blue text-primary">
+                            <span class="material-icons-outlined">inventory_2</span>
+                        </div>
+                    </div>
+                    <span class="text-primary">249</span>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <p>ORDERS</p>
+                        <div class="icon icon-shape background-orange text-primary">
+                            <span class="material-icons-outlined">add_shopping_cart</span>
+                        </div>
+                    </div>
+                    <span class="text-primary">83</span>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <p>SALES</p>
+                        <div class="icon icon-shape background-green text-primary">
+                            <span class="material-icons-outlined">shopping_cart</span>
+                        </div>
+                    </div>
+                    <span class="text-primary">79</span>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <p>ALERTS</p>
+                        <div class="icon icon-shape background-red text-primary">
+                            <span class="material-icons-outlined">notification_important</span>
+                        </div>
+                    </div>
+                    <span class="text-primary">15</span>
+                </div>
+
+            </div>
+
+
+            <!--charts start-->
+            <div class="charts">
+
+                <div class="charts-card">
+                    <p class="chart-title">Revenue vs profit</p>
+                    <div id="bar-chart"></div>
+                </div>
+
+                <div class="charts-card">
+                    <p class="chart-title">Purchase & Sales Orders</p>
+                    <div id="area-chart"></div>
+                </div>
+
+
+            </div>    
+            <!--charts end-->
+        </main>
+        <!--main end-->
+
+    </div>
+
+
+    <!--APEXCHARTS - CDN JS Link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.43.0/apexcharts.min.js"></script>
+
+    <!--custom JS-->
+    <script src="./js/main.js"></script>
+</body>
+</html>
